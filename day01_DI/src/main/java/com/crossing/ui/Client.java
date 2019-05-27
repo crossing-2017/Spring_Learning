@@ -14,13 +14,17 @@ public class Client {
 
     public static void main(String[] args) {
         //1.获取核心容器对象
-        ClassPathXmlApplicationContext ac = new ClassPathXmlApplicationContext("bean.xml");
+        ApplicationContext ac = new ClassPathXmlApplicationContext("bean.xml");
         //2.根据id获取Bean对象
-        //AccountService accountService = (AccountService) ac.getBean("accountService");
-        AccountService accountService = ac.getBean("accountService", AccountService.class);
-        accountService.saveAccount();
+        //AccountService accountService = ac.getBean("accountService", AccountService.class);
+        //accountService.saveAccount();
 
-        //手动关闭容器
-        ac.close();
+
+//        AccountService accountService2 = ac.getBean("accountService2", AccountService.class);
+//        accountService2.saveAccount();
+
+
+        AccountService accountService3 = ac.getBean("accountService3", AccountService.class);
+        accountService3.saveAccount();
     }
 }

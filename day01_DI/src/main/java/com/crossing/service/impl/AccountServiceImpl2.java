@@ -2,6 +2,9 @@ package com.crossing.service.impl;
 
 
 import com.crossing.service.AccountService;
+import com.oracle.webservices.internal.api.databinding.DatabindingMode;
+import lombok.Data;
+import lombok.Setter;
 
 import java.util.Date;
 
@@ -11,19 +14,14 @@ import java.util.Date;
  * @author Crossing
  * @date 2019-05-27
  */
-public class AccountServiceImpl implements AccountService {
 
-    //如果是经常变化的数据，并不适用于注入的方式
+@Setter
+public class AccountServiceImpl2 implements AccountService {
+
     private String name;
     private Integer age;
     private Date birth;
 
-
-    public AccountServiceImpl(String name, Integer age, Date birth) {
-        this.name = name;
-        this.age = age;
-        this.birth = birth;
-    }
 
     public void saveAccount() {
         System.out.println("service中的saveAccount方法执行了。。。" + name + "," + age + "," + birth);
