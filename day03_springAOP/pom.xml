@@ -9,13 +9,15 @@
     </parent>
     <modelVersion>4.0.0</modelVersion>
 
-    <artifactId>day02_xmlioc</artifactId>
-    <packaging>jar</packaging>
+    <artifactId>day03_springAOP</artifactId>
 
     <dependencies>
-
+        <dependency>
+            <groupId>org.aspectj</groupId>
+            <artifactId>aspectjweaver</artifactId>
+            <version>1.9.4</version>
+        </dependency>
     </dependencies>
-
 
 
 </project>

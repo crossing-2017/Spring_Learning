@@ -5,7 +5,7 @@ package com.crossing.dao;
  * @author Crossing
  * @date 2019-05-27
  *
- * <bean id="accountDao" class="com.crossing.dao.impl.AccountDaoImpl"></bean>
+ * <bean id="accountDao" class="com.com.crossing.dao.impl.AccountDaoImpl"></bean>
  */
 public interface AccountDao {
 

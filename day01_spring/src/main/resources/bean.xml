@@ -5,6 +5,6 @@
         http://www.springframework.org/schema/beans/spring-beans.xsd">
 
     <!--把对象的创建交给spring来管理-->
-    <bean id="accountService" class="com.crossing.service.impl.AccountServiceImpl"></bean>
-    <bean id="accountDao" class="com.crossing.dao.impl.AccountDaoImpl"></bean>
+    <bean id="accountService" class="com.com.AccountServiceImpl"></bean>
+    <bean id="accountDao" class="com.com.crossing.dao.impl.AccountDaoImpl"></bean>
 </beans>

@@ -14,6 +14,11 @@
         <module>day02_annoioc</module>
         <module>day02_xmlioc</module>
         <module>day02_annoioc_withoutxml</module>
+        <module>day03_account</module>
+        <module>day03_proxy</module>
+        <module>day03_springAOP</module>
+        <module>day03_advicetype</module>
+        <module>day03_annotationAOP</module>
     </modules>
     <dependencies>
         <dependency>
@@ -41,6 +46,16 @@
             <groupId>org.mybatis</groupId>
             <artifactId>mybatis</artifactId>
             <version>3.5.1</version>
+        </dependency>
+        <dependency>
+            <groupId>cglib</groupId>
+            <artifactId>cglib</artifactId>
+            <version>3.2.12</version>
+        </dependency>
+        <dependency>
+            <groupId>commons-dbutils</groupId>
+            <artifactId>commons-dbutils</artifactId>
+            <version>1.7</version>
         </dependency>
     </dependencies>
 </project>

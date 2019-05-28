@@ -16,7 +16,7 @@ import javax.annotation.Resources;
  * @date 2019-05-27
  *
  *
- * <bean id="accountService" class="com.crossing.service.impl.AccountServiceImpl"></bean>
+ * <bean id="accountService" class="com.com.crossing.service.impl.AccountServiceImpl"></bean>
  *
  *
  * 用于创建对象的
