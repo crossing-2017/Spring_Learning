@@ -19,6 +19,8 @@
         <module>day03_springAOP</module>
         <module>day03_advicetype</module>
         <module>day03_annotationAOP</module>
+        <module>day04_jdbctemplate</module>
+        <module>day04_anno_tx_withoutxml</module>
     </modules>
     <dependencies>
         <dependency>
@@ -56,6 +58,21 @@
             <groupId>commons-dbutils</groupId>
             <artifactId>commons-dbutils</artifactId>
             <version>1.7</version>
+        </dependency>
+        <dependency>
+            <groupId>org.springframework</groupId>
+            <artifactId>spring-tx</artifactId>
+            <version>5.1.7.RELEASE</version>
+        </dependency>
+        <dependency>
+            <groupId>org.springframework</groupId>
+            <artifactId>spring-jdbc</artifactId>
+            <version>5.1.7.RELEASE</version>
+        </dependency>
+        <dependency>
+            <groupId>mysql</groupId>
+            <artifactId>mysql-connector-java</artifactId>
+            <version>8.0.16</version>
         </dependency>
     </dependencies>
 </project>

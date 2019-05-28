@@ -53,14 +53,14 @@
     -->
 
     <!-- 配置Logger类 -->
-    <bean id="logger" class="com.com.Logger"></bean>
+    <bean id="logger" class="com.crossing.utils.Logger "></bean>
 
     <!--配置AOP-->
     <aop:config >
         <!--配置切面 -->
         <aop:aspect id="logAdvice" ref="logger">
             <!-- 配置通知的类型，并且建立通知方法和切入点方法的关联-->
-            <aop:before method="printLog" pointcut="execution(* com.com.crossing.service.impl.*.*(..))"></aop:before>
+            <aop:before method="printLog" pointcut="execution(* com.crossing.service.impl.*.*(..))"></aop:before>
         </aop:aspect>
     </aop:config>
 </beans>
