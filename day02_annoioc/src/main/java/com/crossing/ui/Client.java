@@ -16,15 +16,7 @@ public class Client {
         //1.获取核心容器对象
         ApplicationContext ac = new ClassPathXmlApplicationContext("bean.xml");
         //2.根据id获取Bean对象
-        //AccountService accountService = ac.getBean("accountService", AccountService.class);
-        //accountService.saveAccount();
-
-
-//        AccountService accountService2 = ac.getBean("accountService2", AccountService.class);
-//        accountService2.saveAccount();
-
-
-        AccountService accountService3 = ac.getBean("accountService3", AccountService.class);
-        accountService3.saveAccount();
+        AccountService accountService = ac.getBean("accountService", AccountService.class);
+        accountService.saveAccount();
     }
 }
